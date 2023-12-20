@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparision Operator</title>
+</head>
+<body>
+    <script>
+        let a=0
+        let b=0
+        let c=450
+        document.write('a>b is '+(a>b)); //250>35
+        document.write('<br> a>=b is '+ (a>=b));
+        document.write("<br> a < b is "+(a<b));
+        document.write('<br> a<=b is '+(a<=b));
+        document.write('<br> a==b is '+(a==b));
+        document.write('<br> a!=b is '+(a!=b));
+        document.write('<br> a===b is '+(a===b));
+
+        document.write('<br>type a is '+typeof(a));
+        document.write('<br>type b is '+typeof(b));
+
+        //Logical Opr 
+        document.write("<br> (a > b && a > c) is ",(a>b)&&( a > c));
+        document.write("<br> a > b OR a > c is ",(a>b)||(a>c));
+        document.write("<br> not a > b  is ",!(true));
+
+        //(condition)?true:falseblock;
+        //Wap to find maximum from 2 variable.
+        (a>b)?document.write("<br> A is maximum"):document.write("<br> B is maximum")
+        
+        let g=29; 
+        //To find No is even or odd
+        (a%2 == 0)?document.write('<br>A is even'):document.write("<br> A is odd");
+
+        let year=2004;
+        //To find No is Leap year or not
+        (year%4 == 0)?document.write('<br> It is leap year'):document.write("<br> Not Leap year");
+        
+        let age=15;
+        (age>=18)?document.write('<br>Eligible 4 vote'):document.write('<br>Not eligible 4 vote');
+        
+        
+
+        
+    </script>
+</body>
+</html>

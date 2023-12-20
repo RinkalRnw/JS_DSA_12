@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age=parseInt(prompt("Please enter age:"));
+        if(age>=18){
+            if(age>=60){
+                document.write('You are eligible 4 pension');
+            } else {
+                document.write('You are eligible 4 vote'); 
+            }                  
+        } else {
+            document.write('You are not eligible 4 vote');
+        }
+        //Max from 3 value
+        let a=250;
+        let b=35;
+        let c=450;
+        if(a>b){ //250>450
+            if(a>c){
+                document.write('A is max');                
+            } else {
+                document.write('C is max');                
+            }
+        } else {
+            if(b>c){
+                document.write('B is max');                
+            } else {
+                document.write('C is max');                
+            }
+        }
+        //max from 4 values
+        let p=45;
+        let q=75;
+        let r=99;
+        let s=32;
+        if(p>q){
+            if(p>r){
+                if(p>s){
+                    document.write('P is max');                    
+                } else {
+                    document.write('S is max');
+                }
+            } else {
+                if(r>s){
+                    document.write('R is max');
+                } else {
+                    document.write('S is max');
+                }
+            }
+        } else {
+            if(q>r){
+                if(q>s){
+                    document.write('Q is max');
+                } else {
+                    document.write('S is max');
+                }
+            } else {
+                if(r>s){
+                    document.write('R is max');
+                } else {
+                    document.write('S is max');
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Switch Case Example</h3>
+    <script>
+        
+        let ch=(prompt("1.Addition<br>2.Minus<br>3.DIvision<br>4.Multiply<br>Enter Your choice:"))
+
+        let a = parseInt(prompt("Enter A:"))
+        let b = parseInt(prompt("Enter B:"))
+        switch(ch){
+            case "+":
+                    document.write('<br>Addition is '+(a+b));
+                    break;
+            case "-":
+                    document.write('<br>Minus is '+(a-b));
+                    break;
+            case "/":
+                    document.write('<br>Division is '+(a/b));
+                    break;  
+            case "*":
+                    document.write('<br>Multiply is '+(a*b));
+                    break;
+            default:
+                    document.write('<br>Invalid Choice');
+                    break;
+        }
+    </script>
+</body>
+</html>

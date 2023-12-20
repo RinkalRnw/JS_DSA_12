@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+     hgfhg            dfhgsjhdf                   hsdfgdfg
+    </pre>
+    <script>
+        let a=parseInt(prompt("Enter value of a"));
+        let b=parseInt(prompt("Enter value of b"));
+
+        document.write('<br> before&nbsp;&nbsp;swap--A is '+a);
+        document.write('<br>before swap--B is '+b);
+        
+        let t;
+        t=a;
+        a=b;
+        b=t;
+
+        document.write('<br>after swap--A is '+a);
+        document.write('<br>after swap--B is '+b);
+
+        let salary = parseInt(prompt("Enter value of Salary: "));
+        let hra = salary*10/100;
+        let da = salary*5/100;
+        let ta = salary*8/100;
+
+        let gross_salary = salary+hra+da+ta;
+        document.write('<br> salary is '+salary);
+
+        document.write('<br> Gross salary is '+gross_salary);
+               
+    </script>
+</body>
+</html>

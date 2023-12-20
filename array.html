@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        //Array 
+        let b=25
+        let a = [10,20,30,40]
+        //index -- position-0
+         document.write('<br>length of a is '+a.length);
+        // document.write('<br>a is '+a[1]);
+        // document.write('<br>a is '+a[2]);
+        // document.write('<br>a is '+a[3]);
+        a.push(25)
+        a.push(45)
+        a.push(35)
+        document.write('<br>length of a is '+a.length);
+
+        for(let i=0;i<a.length;i++){
+            document.write('<br>a is '+a[i]);
+        }
+        a.pop();
+        document.write('<br>After delete-----');
+        
+        for(let i=0;i<a.length;i++){
+            document.write('<br>a is '+a[i]);
+        }
+        document.write('<br>---After delete-----');
+        a.unshift(11)
+        for(let i=0;i<a.length;i++){
+            document.write('<br>a is '+a[i]);
+        }
+        document.write('<br>---After delete-----');
+        a.shift()
+        for(let i=0;i<a.length;i++){
+            document.write('<br>a is '+a[i]);
+        }
+        a.splice(2,0,77,88);
+        document.write('<br>---After Add-----');
+        for(let i=0;i<a.length;i++){
+            document.write('<br>a is '+a[i]);
+        }
+        a.splice(2,3);
+        document.write('<br>---After Add-----');
+        for(let i=0;i<a.length;i++){
+            document.write('<br>a is '+a[i]);
+        }
+    </script>
+</body>
+</html>

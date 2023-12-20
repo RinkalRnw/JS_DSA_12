@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //no = 365 =3counter
+        //sum of digit = 3+6+5 = 14
+        //multiply of digit = 3*6*5 = 90
+        let no = parseInt(prompt("Enter No:"));
+        let count=0;
+        let sum=0;
+        let mult=1;
+        let r;
+        while(no>0){
+            r=no%10; //365%10 = 5 36%10=6 3%10 = 3
+            no=parseInt(no/10); 
+            sum = sum+r;
+            mult = mult*r;
+            count++;
+        }
+        document.write('<br>Total digits are '+count);
+        document.write('<br>Sum of digits are '+sum);
+        document.write('<br>Multiply of digits are '+mult);
+        
+    </script>
+</body>
+</html>

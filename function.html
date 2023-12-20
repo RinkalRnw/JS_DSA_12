@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo2"></div>
+    <script>
+        
+        //TNRN
+        //Arrow function - ES6 
+        const add = () =>{
+            let a=10;
+            let b=20;
+            document.write('Addition is '+(a+b));  
+        }
+        // function add(){
+                     
+        // }
+        add()
+        //TNRS
+        let a=5;
+        // const cube = () =>  { return a*a*a; };
+        // const cube = () =>  { a*a*a; };
+        const cube = () => a*a*a;
+        // function cube(){
+        //     let a=5;
+        //     return a*a*a;
+        // }
+        document.getElementById("demo").innerHTML = "Cube is "+cube()
+        //TSRN
+        const area = (r)=>{
+            const pi=3.14
+            document.write('<br> Area of Circle is '+(pi*r*r)); 
+        }
+        // function area(r){
+        //     const pi=3.14
+        //     document.write('<br> Area of Circle is '+(pi*r*r));           
+        // }
+        area(20)
+        //TSRS
+        function subtract(r,b,h){
+            return (r*2)-b+h;
+        }
+        document.getElementById("demo2").innerHTML = "Subtract is "+subtract(5,3,2)
+
+    </script>
+</body>
+</html>
